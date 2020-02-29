@@ -6,89 +6,89 @@
 			"value": "https://raw.githubusercontent.com/Everink/RDS-Templates/master/wvd-templates/Create%20and%20provision%20WVD%20host%20pool/"
 		},
 		"rdshImageSource": {
-			"value": "SharedImageGallery"
+			"value": "Gallery"
 		},
 		"SharedImageGalleryResourceGroup": {
-			"value": "wvd-p-weu-sharedimagegallery-rg"
+			"value": ""
 		},
 		"SharedImageGalleryName": {
-			"value": "WVD_SharedImageGallery"
+			"value": "Windows-10-Enterprise-multi-session-with-Office-365-ProPlus"
 		},
 		"SharedImageGalleryDefinitionName": {
-			"value": "WVD-HostPool1-GoldenImage"
+			"value": ""
 		},
 		"SharedImageGalleryVersionName": {
 			"value": "latest"
 		},
 		"hostPoolName": {
-			"value": "Hostpool1"
+			"value": "WVD-HFK-Pool01"
 		},
 		"rdshNamePrefix": {
-			"value": "demoVM"
+			"value": "HFKWVD"
 		},
 		"rdshNumberOfInstances": {
-			"value": 2
+			"value": 1
 		},
 		"rdshVmSize": {
 			"value": "Standard_D2s_v3"
 		},
 		"rdshVMDiskType": {
-			"value": "Premium_LRS"
+			"value": "StandardSSD_LRS"
 		},
 		"domainToJoin": {
-			"value": "roeleverink.nl"
+			"value": "hfkkestensbe.onmicrosoft.com"
 		},
 		"existingDomainUPN": {
-			"value": "sa-domainjoin@roeleverink.nl"
+			"value": "tenantcreator@hfkkestensbe.onmicrosoft.com"
 		},
 		"existingDomainPassword": {
 			"reference": {
 				"keyVault": {
-					"id": "/subscriptions/f7e06285-03e5-4c9d-95cd-32d791b2563e/resourcegroups/wvd-p-weu-keyvault-rg/providers/Microsoft.KeyVault/vaults/wvd-p-weu-keyvault01"
+					"id": ""
 				},
-				"secretName": "sa-domainjoin"
+				"secretName": ""
 			}
 		},
 		"ouPath": {
-			"value": "OU=Windows Virtual Desktop,OU=Computers,OU=Demo,DC=roeleverink,DC=nl"
+			"value": ""
 		},
 		"existingVnetName": {
-			"value": "wvd-p-weu-vnet1"
+			"value": "HFK-vnet"
 		},
 		"existingSubnetName": {
-			"value": "wvd-p-weu-vnet1_CLIENTS"
+			"value": "HFK_WVD_sub"
 		},
 		"virtualNetworkResourceGroupName": {
-			"value": "wvd-p-weu-network-rg"
+			"value": "HFK_RG01"
 		},
 		"rdBrokerURL": {
 			"value": "https://rdbroker.wvd.microsoft.com"
 		},
 		"existingTenantGroupName": {
-			"value": "Default Tenant Group"
+			"value": "HFKWVD"
 		},
 		"existingTenantName": {
-			"value": "roeleverink.nl"
+			"value": "HFKWVD"
 		},		
 		"defaultDesktopUsers": {
-			"value": "r.everink@roeleverink.nl"
+			"value": "admin@nelissencomputersbe.onmicrosoft.com"
 		},
 		"tenantAdminUpnOrApplicationId": {
-			"value": "514e2dd6-ecd4-417b-ac07-de44565cb818"
+			"value": "tenantcreator@hfkkestensbe.onmicrosoft.com"
 		},
 		"tenantAdminPassword": {
 			"reference": {
 				"keyVault": {
-					"id": "/subscriptions/f7e06285-03e5-4c9d-95cd-32d791b2563e/resourcegroups/wvd-p-weu-keyvault-rg/providers/Microsoft.KeyVault/vaults/wvd-p-weu-keyvault01"
+					"id": ""
 				},
-				"secretName": "WVD-SP"
+				"secretName": ""
 			}
 		},
 		"isServicePrincipal": {
-			"value": true
+			"value": false
 		},
 		"aadTenantId": {
-			"value": "214da8f2-c2d8-4f61-8e13-8dba0a4edaa2"
+			"value": "6e72afce-3f99-4a7c-af34-34dc02d28786"
 		}
 	}
 }
